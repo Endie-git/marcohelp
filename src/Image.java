@@ -107,7 +107,7 @@ public class Image {
             for (int indiceFormelarg = 0; indiceFormelarg < tabPixelForme[indiceFormeHaut].length; indiceFormelarg++) {
                 if (tabPixelForme[indiceFormeHaut][indiceFormelarg] == tabPixelImage[indiceFormeHaut + indiceImageHaut][indiceFormelarg + indiceImageLarg]) {
                     compte++;
-                    //fgj
+                    //fgjb
                 }
             }
         }
