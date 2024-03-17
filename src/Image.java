@@ -95,7 +95,7 @@ public class Image {
             for (int indiceImageLarg = 0; indiceImageLarg <= largeurImage - largeurForme; indiceImageLarg++) {
                 if (comparer(tabPixelImage, tabPixelForme, indiceImageHaut, indiceImageLarg)) {
 
-                    System.out.println("("+indiceImageHaut + "," + indiceImageLarg+")");
+                    System.out.println("(" + indiceImageHaut + "," + indiceImageLarg + ")");
                 }
             }
         }
@@ -106,12 +106,11 @@ public class Image {
         for (int indiceFormeHaut = 0; indiceFormeHaut < tabPixelForme.length; indiceFormeHaut++) {
             for (int indiceFormelarg = 0; indiceFormelarg < tabPixelForme[indiceFormeHaut].length; indiceFormelarg++) {
                 if (tabPixelForme[indiceFormeHaut][indiceFormelarg] == tabPixelImage[indiceFormeHaut + indiceImageHaut][indiceFormelarg + indiceImageLarg]) {
-                    compte++;
-                    //fgjb
+
                 }
             }
         }
-        if(compte == tabPixelForme.length * tabPixelForme[0].length) {
+        if (compte == tabPixelForme.length * tabPixelForme[0].length) {
             return true;
         } else {
             return false;

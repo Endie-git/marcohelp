@@ -54,11 +54,9 @@ public class Main {
                 for (int indiceRotation = 0; indiceRotation < 4; indiceRotation++) {
                     for (int j = 0; j < nbFormes; j++) {
                         if (formes[j] != null) {
-                            if(indiceRotation==0) {
-                                System.out.println("Forme " + j + " trouvée dans l'image " + i + " à la position ");
+                            if (indiceRotation == 0) {
                                 Image.trouverCoordonneesFormesDansImage(images[i], formes[j]);
-                            }
-                            else{
+                            } else {
                                 System.out.println("Forme " + j + " trouvée dans l'image " + i + " à la position ");
                                 Image.trouverCoordonneesFormesDansImage(images[i], formes[j]);
                             }
